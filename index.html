@@ -97,7 +97,7 @@ body{background:linear-gradient(175deg,var(--soft-2),var(--bg) 250px)!important;
 :root[data-mode="dark"] .homeClear,:root[data-mode="dark"] .homeRecipeAdd{background:var(--soft)!important}
 :root[data-mode="dark"] .calorieQuick button{color:white!important}
 
-</style><link rel="stylesheet" href="./pantry-v16.css"><link rel="stylesheet" href="./smart-pantry-v17.css"></head><body><main id="app"></main><nav class="tabs"><div id="tabs"></div></nav><div id="modal"></div><div id="drawerMount"></div><script>
+</style><link rel="stylesheet" href="./pantry-v16.css"></head><body><main id="app"></main><nav class="tabs"><div id="tabs"></div></nav><div id="modal"></div><div id="drawerMount"></div><script>
 'use strict';
 const KEY='mealplanner-user-v1', RKEY='mealplanner-recipes-v1', DAYS=['Luni','Marți','Miercuri','Joi','Vineri','Sâmbătă','Duminică'], SLOTS=['Mic dejun','Prânz','Cină','Gustare'];
 let state=load(KEY,{fast:[2,4],plan:{},checked:{},target:2200}),recipes=load(RKEY,[]),tab='home',chosenDay=0,filter='all',search='',minProtein=0,maxKcal=0,selectedRecipe=null,selectedPortions=1,addDay=0,addSlot='Prânz';
@@ -401,4 +401,4 @@ async function importProgressArchive(file){if(!file)return;try{if(file.size>250*
 
 migrationV15();
 if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));render();
-</script><script src="./pantry-v16.js"></script><script src="./smart-pantry-v17.js"></script></body></html>
+</script><script src="./pantry-v16.js"></script></body></html>

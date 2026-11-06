@@ -1,19 +1,12 @@
-MealPlan v1.7 Smart Pantry (functiile planificate pentru v1.7 si v1.8 combinate)
+MEALPLAN v1.6 — CĂMARA MEA (PWA)
 
-Incarca TOATE cele 11 fisiere in radacina repository-ului GitHub MealPlan (nu intr-un subfolder).
-Faci inainte un backup JSON si separat ZIP-ul fotografiilor de progres. Nu publica niciodata biblioteca privata cu retete sau fotografii originale.
-
-Noutati:
-- rezervari virtuale pentru retete planificate (stocul nu scade pana la gatire)
-- gatire cu numar de portii ales; loturi de portii gatite reutilizabile in plan
-- loturi de inventar cu date optionale de expirare
-- recomandari retele din ingrediente existente, marcand lipsurile sau cantitatile neclare
-- lista de cumparaturi influentata de rezervari si stocul neexpirat
-- verificare gramaje ambigue: vezi textul original si pagina din PDF, introduci o cantitate sau marchezi ca fara cantitate exacta; corectiile se pastreaza in backupul local
-- inventar/planificator/retete nu necesita un nou import al celor 362 de retete
-
-OBSERVATII:
-Corectiile sunt locale dispozitivului. Pentru sincronizare intre telefoane, exporta backup-ul conform instructiunilor aplicatiei.
-Nu transforma automat un ingredient exprimat in linguri in grame.
-Datele de expirare sunt introduse de utilizator. Nu reprezinta aviz de siguranta alimentara.
-Vei testa pe telefon inainte sa te bazezi pe noul inventar.
+1. IMPORTANT: înainte de actualizare, pe telefon exportă backup JSON din Setări; pentru fotografiile de progres exportă separat ZIP-ul din Poze progres. Păstrează și arhiva privată cu cele 362 de rețete.
+2. Dezarhivează pachetul și încarcă TOATE cele 9 fișiere direct în rădăcina repository-ului GitHub MealPlan: index.html, pantry-v16.js, pantry-v16.css, manifest.webmanifest, service-worker.js, icon.svg, icon-192.png, icon-512.png, README.txt. Nu încărca folderul ca subdirector.
+3. Commit changes; verifică GitHub Actions / Pages, apoi deschide aplicația și verifică în antet v1.6.
+4. Datele existente, inclusiv biblioteca privată, rămân în aceeași stocare locală; nu se reimportă la fiecare actualizare.
+5. Din meniul lateral: Cămara mea. Adaugă alimentele deja disponibile sau, din Cumpărături, apasă „Am cumpărat” și introdu cantitatea per pachet + numărul de pachete.
+6. Lista de cumpărături însumează ingredientele din mesele negătite ale săptămânii selectate și scade stocul disponibil. Dacă stocul acoperă orezul, nu îl mai afișează la cumpărături.
+7. În Planificator apasă „Am gătit”, apoi confirmă. Doar atunci se scad ingredientele cunoscute și disponibile. Bifa „Consumate” rămâne separată.
+8. În Cămara mea poți scădea alte utilizări, corecta stocul și anula operațiuni greșite. Nu șterge datele browserului și nu dezinstala aplicația dacă nu ai backup.
+9. Ingredientele similare cu nume sau unități diferite NU sunt echivalate automat. Cantitățile nerecunoscute în PDF necesită verificare; programul nu inventează gramaje. Versiunea 1.6 nu include rezervări separate pe zile sau un control de expirare (posibile ulterior).
+10. Aplicația și fotografiile private nu trebuie publicate împreună. În GitHub intră numai fișierele din acest ZIP public.
