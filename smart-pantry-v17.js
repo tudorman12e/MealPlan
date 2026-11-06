@@ -339,10 +339,10 @@ render=function(){
  if(['pantry','prepared','review','recommendations','shopping','plan','home'].includes(tab)){
   const content=tab==='pantry'?pantryView():tab==='prepared'?v17PreparedView():tab==='review'?v17ReviewView():tab==='recommendations'?v17RecommendationView():tab==='shopping'?shoppingV16():tab==='plan'?plannerV16():homeV16();
   document.getElementById('tabs').innerHTML='';
-  document.getElementById('app').innerHTML=`<header class="v15Header"><button class="hamburger" onclick="toggleDrawer(true)" aria-label="Deschide meniul"><span>☰</span></button><button class="brandButton" onclick="go('home')"><span class="brand">🥗 meal<span>plan</span><div class="eyebrow">rețetele mele • v1.7</div></span></button><button class="headerDate" onclick="jumpToday()">${shortDate(localIso())}</button></header>`+content;
+  document.getElementById('app').innerHTML=`<header class="v15Header"><button class="hamburger" onclick="toggleDrawer(true)" aria-label="Deschide meniul"><span>☰</span></button><button class="brandButton" onclick="go('home')"><span class="brand">🥗 meal<span>plan</span><div class="eyebrow">rețetele mele • v1.7.1</div></span></button><button class="headerDate" onclick="jumpToday()">${shortDate(localIso())}</button></header>`+content;
   renderDrawer();queueMicrotask(hydratePhotos);if(tab==='photos')queueMicrotask(hydrateProgressPhotos);
  }else{
-  V17_ORIGINAL.render();let v=document.querySelector('.v15Header .eyebrow');if(v)v.textContent='rețetele mele • v1.7';
+  V17_ORIGINAL.render();let v=document.querySelector('.v15Header .eyebrow');if(v)v.textContent='rețetele mele • v1.7.1';
  }
 };
 V15_NAV.splice(V15_NAV.findIndex(x=>x[0]==='pantry')+1,0,['recommendations','🍳','Ce pot găti?']);
