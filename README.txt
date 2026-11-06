@@ -1,9 +1,15 @@
-MEALPLAN v1.2 – DOAR APLICAȚIA PUBLICĂ
-1. Fă un backup din aplicația existentă înainte de actualizare.
-2. Urcă în GitHub numai cele 6 fișiere de interfață (nu acest README este necesar).
-3. Încarcă-le DIRECT în rădăcina repository-ului MealPlan, nu într-un subfolder.
-4. GitHub Pages: Settings > Pages > Deploy from branch: main, /(root).
-5. Datele și rețetele deja importate sunt păstrate în browser pe același dispozitiv/origin.
-6. Noul design afișează doar macronutrienții per porție și ajustează ingredientele la numărul ales de porții.
-7. Opțional: importă în Setări ZIP-ul privat v1.2 (NU îl publica pe GitHub).
-8. Rețetele sunt transcrise automat; neconcordanțele trebuie verificate în pagina originală.
+MealPlan v1.3 — actualizare interfață (doar codul public)
+
+Ce e nou:
+1. Listă de cumpărături pe categorii (legume, fructe, carne, lactate etc.), bifare și copiere grupată.
+2. Alegere masă în planificator: căutare după nume/ingredient, filtre, fotografii și selecție vizuală.
+3. Bibliotecă: De post / Normale, tip de preparat orientativ, timp, favorite și sortare. Fără filtre kcal/proteine.
+4. Interfață mai luminoasă și colorată, optimizată pentru telefon.
+
+IMPORTANT:
+- Încarcă doar fișierele din această arhivă în RĂDĂCINA repository-ului public MealPlan.
+- Nu publica biblioteca privată cu rețete și fotografii.
+- Folosim aceleași chei locale pentru rețete și planificator; fă backup JSON înainte de actualizare.
+- Fără modificare a arhivei private v1.2: reimportarea ei nu este necesară pe același dispozitiv.
+- Categoria de tip de preparat este o sugestie automată și poate necesita ajustări.
+- Cantitățile neclare rămân marcate pentru confruntare cu PDF-ul.
